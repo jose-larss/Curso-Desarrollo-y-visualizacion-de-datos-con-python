@@ -1,4 +1,0 @@
-# Ejercicio
-
-MODIFICADO
-MODIFICADO
