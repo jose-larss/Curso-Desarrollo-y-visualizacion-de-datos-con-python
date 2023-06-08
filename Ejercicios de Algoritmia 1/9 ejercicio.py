@@ -32,7 +32,7 @@ Ejemplo: articulo vale: 138.53  y pago 140 //
 1 - conocer la cantidad entregada de todos los billetes
 2 - Recibiremos (si no hay cambio/si esta justo/si se devuelve cambio (de la manera mas optima))
 """
-import math 
+#import math 
 """
 caja = [
     (500,0),
