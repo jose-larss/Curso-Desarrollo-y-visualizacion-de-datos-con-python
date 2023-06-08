@@ -28,15 +28,21 @@ PARA SABER SI ES CORRECTO, EL ALGORITMO SE REALIZA DE LA SIGUIENTE MANERA:
 
 isbn = '8441513929'
 resultado = 0
-contador = 1
+print('------------------------VALIDANDO ISBN----------------------------------------')
+isbn = input('Introduzca número ISBN: ')
 
-for caracter in isbn:
-    linea = int(caracter) * contador
-    
-    resultado += int(linea)
-    print(resultado)
-    contador += 1
+if len(isbn) == 10:
+    for i in range (len(isbn)):
 
-print(resultado / 11)
+        linea = int(isbn[i]) * (i + 1)
+        resultado += linea
+        
+    resto = resultado % 11
+    if resto == 0:
+        print('CORRECTO')
+    else:
+        print('INCORRECTO')
+else:
+    print(f'Debe introducir un ISBN de 10 digitos, este tiene {len(isbn)}')
 
  
