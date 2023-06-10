@@ -56,6 +56,29 @@ Para poder calcular las el número final de la semana debemos seguir los siguien
     8. Miramos la tabla y vemos que el número 1 corresponde a DOMINGO
 """
 
+print("-----CALCULO DÍA DE NACIMIENTO-----")
+dia = int(input('Introduzca su dia de nacimiento:'))
+mes = int(input('Introduzca su mes de nacimiento:'))
+anio = int(input('Introduzca su año de nacimiento:'))
+diasSemana=('Sábado','Domingo','Lunes','Martes','Miércoles','Jueves','Viernes')
+if mes == 1:
+  mes = 13
+  anio-= 1
+elif mes == 2:
+  mes = 14 
+  anio-=1
+
+paso1 = int(((mes + 1) * 3) / 5)
+paso2 = int(anio / 4)
+paso3 = int(anio / 100)
+paso4 = int(anio / 400)
+paso5 = int(dia + 2 * mes + anio + paso1 + paso2 - paso3 + paso4 + 2)
+paso6 = int(paso5 / 7)
+resultadoFinal = int(paso5 - paso6 * 7)
+print('Su día de nacimiento fué:', diasSemana[resultadoFinal])
+
+
+"""
 tupla = ('sabado', 
          'domingo', 
          'lunes', 
@@ -95,4 +118,4 @@ for i in range (len(tupla)):
     
     if i == operacion7:
         print(tupla[i])
-    
+"""  
