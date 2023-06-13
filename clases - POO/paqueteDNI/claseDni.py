@@ -9,6 +9,8 @@ class Dni:
         self.dni = dni
         self.resultado = self.dni % 23
 
+        print(self.get_DNI_substring(51075775))
+
         if self.resultado == 0:
             print('La letra de tu DNI es T: ', self.resultado)
         elif self.resultado == 1:
@@ -57,3 +59,15 @@ class Dni:
             print('La letra de tu DNI es: E', self.resultado)
         elif self.resultado == 23:
             print('La letra de tu DNI es: T', self.resultado)
+
+        
+
+    def get_DNI_substring(self, dni):
+
+        resultado = dni % 23
+        letrasDNI = 'TRWAGMYFPDXBNJZSQVHLCKET'
+
+        letra = letrasDNI[resultado]
+
+        return f"La letra de tu DNI funcion substringes: {letra}"
+        
