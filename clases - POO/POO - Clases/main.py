@@ -32,5 +32,8 @@ print(tecnico1.getLenguajes())
 
 tecnico2 = clases.TecnicoRedes()
 print(f"El tecnico de redes2 sabe {tecnico2.reparaPc()} tiene {tecnico2.experiencia} experiencia, ademas de {tecnico2.auditarRedes}")
+print(tecnico2.lenguajes)
+tecnico2.setNombre('echanove')
+print(tecnico2.getNombre())
 
 
