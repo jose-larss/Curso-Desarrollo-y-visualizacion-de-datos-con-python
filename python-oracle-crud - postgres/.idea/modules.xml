@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/EjAccesoAoracle.iml" filepath="$PROJECT_DIR$/.idea/EjAccesoAoracle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/python-oracle-crud - postgres.iml" filepath="$PROJECT_DIR$/.idea/python-oracle-crud - postgres.iml" />
     </modules>
   </component>
 </project>
